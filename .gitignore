@@ -1,0 +1,62 @@
+# AnyLogic generated / local files
+*.bak
+*.backup
+*.tmp
+*.log
+*.lock
+*.class
+
+# AnyLogic model runtime/build artifacts
+/classes/
+/bin/
+/build/
+/out/
+/target/
+
+# AnyLogic exported simulation/cache folders
+/cache/
+/generated/
+/simulation/
+/experimentOutput/
+/outputs/
+/results/
+
+# AnyLogic database / runtime temp files
+*.db.lock
+*.trace.db
+*.mv.db
+
+# Java / Gradle / Maven artifacts
+.gradle/
+.mvn/
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+target/
+build/
+
+# Eclipse / AnyLogic IDE metadata
+.metadata/
+.settings/
+.project
+.classpath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.swp
+*.swo
+*~
