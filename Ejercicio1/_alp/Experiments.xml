@@ -41,18 +41,18 @@
 		<Parameters/>
 		<PresentationProperties>
 			<EnableZoomAndPanning>true</EnableZoomAndPanning>
-			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<ExecutionMode>virtualTime</ExecutionMode>
 			<Title>Ejercicio1 : Simulation</Title>
 			<EnableDeveloperPanel>true</EnableDeveloperPanel>
 			<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
 			<RealTimeScale>1.0</RealTimeScale>
 		</PresentationProperties>
 		<ModelTimeProperties>
-			<StopOption>Never</StopOption>
+			<StopOption>Stop at specified time</StopOption>
 			<InitialDate>1781308800000</InitialDate>
 			<InitialTime>0.0</InitialTime>
-			<FinalDate>1783900800000</FinalDate>
-			<FinalTime>100.0</FinalTime>
+			<FinalDate>1781913600000</FinalDate>
+			<FinalTime>10080.0</FinalTime>
 		</ModelTimeProperties>
 		<BypassInitialScreen>true</BypassInitialScreen>
 	</SimulationExperiment>
