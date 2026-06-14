@@ -3,8 +3,8 @@
 	<Variable Class="PlainVariable">
 		<Id>1781380627399</Id>
 		<Name><![CDATA[tiempoEntrada]]></Name>
-		<X>20</X>
-		<Y>-10</Y>
+		<X>30</X>
+		<Y>70</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -20,9 +20,9 @@
 		</Properties>
 	</Variable>
 	<Variable Class="Parameter">
-		<Id>1781380029410</Id>
+		<Id>1781400459382</Id>
 		<Name><![CDATA[tipo]]></Name>
-		<X>50</X>
+		<X>160</X>
 		<Y>50</Y>
 		<Label>
 			<X>10</X>
@@ -36,7 +36,7 @@
 			<UnitType>NONE</UnitType>
 			<SdArray>false</SdArray>
 			<ParameterEditor>
-				<Id>1781380029409</Id>
+				<Id>1781400459380</Id>
 				<EditorContolType>TEXT_BOX</EditorContolType>
 				<MinSliderValue>0</MinSliderValue>
 				<MaxSliderValue>100</MaxSliderValue>
