@@ -271,6 +271,10 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[interarrivalTime]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[exponential(12)]]></Code>
+					<Unit Class="TimeUnits">SECOND</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalMode]]></Name>
@@ -489,12 +493,19 @@ agent.tiempoEntrada = time();]]></Code>
 		<Parameters>
 			<Parameter>
 				<Name><![CDATA[arrivalType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.INTERARRIVAL_TIME]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[rate]]></Name>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[interarrivalTime]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[exponential( 20 )]]></Code>
+					<Unit Class="TimeUnits">SECOND</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalMode]]></Name>
