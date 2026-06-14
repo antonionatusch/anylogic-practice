@@ -41,15 +41,22 @@
 			<Parameter>
 				<Name><![CDATA[interarrivalTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[exponential( 30 )]]></Code>
+					<Code><![CDATA[exponential(1.0 / 30.0)]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalMode]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.AT_TIME]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalTime]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[480]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[rateSchedule]]></Name>
@@ -192,6 +199,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[pushProtocol]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[discardHangingEntities]]></Name>
@@ -272,15 +282,22 @@ agent.tiempoEntrada = time();]]></Code>
 			<Parameter>
 				<Name><![CDATA[interarrivalTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[exponential(12)]]></Code>
-					<Unit Class="TimeUnits">SECOND</Unit>
+					<Code><![CDATA[exponential(1.0 / 12.0)]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalMode]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.AT_TIME]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalTime]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[480]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[rateSchedule]]></Name>
@@ -423,6 +440,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[pushProtocol]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[discardHangingEntities]]></Name>
@@ -503,15 +523,22 @@ agent.tiempoEntrada = time();]]></Code>
 			<Parameter>
 				<Name><![CDATA[interarrivalTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[exponential( 20 )]]></Code>
-					<Unit Class="TimeUnits">SECOND</Unit>
+					<Code><![CDATA[exponential(1.0 / 20.0)]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalMode]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.AT_TIME]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[firstArrivalTime]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[480]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[rateSchedule]]></Name>
@@ -654,6 +681,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[pushProtocol]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[discardHangingEntities]]></Name>
@@ -728,7 +758,7 @@ agent.tiempoEntrada = time();]]></Code>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+					<Code><![CDATA[self.CAPACITY_SCHEDULE_ON_OFF]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -745,6 +775,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityOnValue]]></Name>
@@ -763,6 +796,46 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[newUnit]]></Name>
+				<Value Class="EntityCodeValue">
+					<IsAgentEntity>true</IsAgentEntity>
+					<EntityEmbeddedObject>
+						<Id>1781463847140</Id>
+						<ActiveObjectClass>
+							<PackageName>ejercicio1</PackageName>
+							<ClassName>Pieza</ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName>ejercicio1</PackageName>
+								<ClassName>Pieza</ClassName>
+								<ItemName>1781380029406</ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters/>
+						<ReplicationFlag>true</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<Id>1781463847141</Id>
+							<TableReference/>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn/>
+					</EntityEmbeddedObject>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
@@ -980,7 +1053,7 @@ agent.tiempoEntrada = time();]]></Code>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+					<Code><![CDATA[self.CAPACITY_SCHEDULE_ON_OFF]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -997,6 +1070,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityOnValue]]></Name>
@@ -1015,6 +1091,46 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[newUnit]]></Name>
+				<Value Class="EntityCodeValue">
+					<IsAgentEntity>true</IsAgentEntity>
+					<EntityEmbeddedObject>
+						<Id>1781463861552</Id>
+						<ActiveObjectClass>
+							<PackageName>ejercicio1</PackageName>
+							<ClassName>Pieza</ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName>ejercicio1</PackageName>
+								<ClassName>Pieza</ClassName>
+								<ItemName>1781380029406</ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters/>
+						<ReplicationFlag>true</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<Id>1781463861553</Id>
+							<TableReference/>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn/>
+					</EntityEmbeddedObject>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
@@ -1232,7 +1348,7 @@ agent.tiempoEntrada = time();]]></Code>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+					<Code><![CDATA[self.CAPACITY_SCHEDULE_ON_OFF]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -1249,6 +1365,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityOnValue]]></Name>
@@ -1267,6 +1386,46 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[newUnit]]></Name>
+				<Value Class="EntityCodeValue">
+					<IsAgentEntity>true</IsAgentEntity>
+					<EntityEmbeddedObject>
+						<Id>1781463866085</Id>
+						<ActiveObjectClass>
+							<PackageName>ejercicio1</PackageName>
+							<ClassName>Pieza</ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName>ejercicio1</PackageName>
+								<ClassName>Pieza</ClassName>
+								<ItemName>1781380029406</ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters/>
+						<ReplicationFlag>true</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<Id>1781463866086</Id>
+							<TableReference/>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn/>
+					</EntityEmbeddedObject>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
@@ -1484,7 +1643,7 @@ agent.tiempoEntrada = time();]]></Code>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+					<Code><![CDATA[self.CAPACITY_SCHEDULE_ON_OFF]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -1501,6 +1660,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityOnValue]]></Name>
@@ -1519,6 +1681,46 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[newUnit]]></Name>
+				<Value Class="EntityCodeValue">
+					<IsAgentEntity>true</IsAgentEntity>
+					<EntityEmbeddedObject>
+						<Id>1781463869943</Id>
+						<ActiveObjectClass>
+							<PackageName>ejercicio1</PackageName>
+							<ClassName>Pieza</ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName>ejercicio1</PackageName>
+								<ClassName>Pieza</ClassName>
+								<ItemName>1781380029406</ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters/>
+						<ReplicationFlag>true</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<Id>1781463869944</Id>
+							<TableReference/>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn/>
+					</EntityEmbeddedObject>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
@@ -1755,6 +1957,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[maximumCapacity]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
@@ -1903,8 +2108,8 @@ agent.tipo.equals("BANDEJA") ? triangular(5, 6, 11) :
 	<EmbeddedObject>
 		<Id>1781409540872</Id>
 		<Name><![CDATA[serviceTaladro]]></Name>
-		<X>220</X>
-		<Y>150</Y>
+		<X>410</X>
+		<Y>50</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -1949,6 +2154,9 @@ agent.tipo.equals("BANDEJA") ? triangular(5, 6, 11) :
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[maximumCapacity]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
@@ -2097,8 +2305,8 @@ agent.tipo.equals("REPISA") ? 16 :
 	<EmbeddedObject>
 		<Id>1781409580326</Id>
 		<Name><![CDATA[serviceEsmeril]]></Name>
-		<X>220</X>
-		<Y>250</Y>
+		<X>610</X>
+		<Y>180</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -2143,6 +2351,9 @@ agent.tipo.equals("REPISA") ? 16 :
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[maximumCapacity]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
@@ -2292,8 +2503,8 @@ agent.tipo.equals("REPISA") ? uniform(7, 12) :
 	<EmbeddedObject>
 		<Id>1781409596467</Id>
 		<Name><![CDATA[serviceBarnizado]]></Name>
-		<X>220</X>
-		<Y>340</Y>
+		<X>620</X>
+		<Y>330</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -2338,11 +2549,14 @@ agent.tipo.equals("REPISA") ? uniform(7, 12) :
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[maximumCapacity]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[exponential(5)
+					<Code><![CDATA[exponential(1.0 / 5.0)
 // Indistinto de la pieza que 
 // llegue, siempre barniza
 // 12 ítems por hora,
@@ -2481,6 +2695,336 @@ agent.tipo.equals("REPISA") ? uniform(7, 12) :
 		<InitializationType>SPECIFIED_NUMBER</InitializationType>
 		<InitializationDatabaseTableQuery>
 			<Id>1781409596465</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1781462490108</Id>
+		<Name><![CDATA[selectDespuesSierra]]></Name>
+		<X>320</X>
+		<Y>60</Y>
+		<Label>
+			<X>-25</X>
+			<Y>-20</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>SelectOutput</ClassName>
+				<ItemName>1412336242931</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[agent.tipo.equals("MACETERO")]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1781462490106</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1781462895646</Id>
+		<Name><![CDATA[selectDespuesTaladro]]></Name>
+		<X>520</X>
+		<Y>60</Y>
+		<Label>
+			<X>-25</X>
+			<Y>-20</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>SelectOutput</ClassName>
+				<ItemName>1412336242931</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[agent.tipo.equals("MACETERO")]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1781462895644</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1781463084505</Id>
+		<Name><![CDATA[sinkSalida]]></Name>
+		<X>820</X>
+		<Y>340</Y>
+		<Label>
+			<X>-10</X>
+			<Y>-20</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Sink</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>Sink</ClassName>
+				<ItemName>1412336242929</ItemName>
+			</GenericParameterSubstituteReference>
+			<GenericParameterSubstituteValue Class="CodeValue">
+				<Code><![CDATA[Pieza]]></Code>
+			</GenericParameterSubstituteValue>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[traceln(agent.tipo + " terminó en tiempo " + (time() - agent.tiempoEntrada));]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destroyEntity]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1781463084503</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1781463289643</Id>
+		<Name><![CDATA[selectDespuesEsmeril]]></Name>
+		<X>720</X>
+		<Y>190</Y>
+		<Label>
+			<X>-30</X>
+			<Y>-20</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput5</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>SelectOutput5</ClassName>
+				<ItemName>1412336243132</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[type]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition1]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[agent.tipo.equals("MACETERO")]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition2]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[agent.tipo.equals("BANDEJA")]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition3]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[agent.tipo.equals("REPISA")]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition4]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability1]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability2]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability3]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability4]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability5]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[exitNumber]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit1]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit2]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit3]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit4]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit5]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1781463289641</Id>
 			<TableReference/>
 		</InitializationDatabaseTableQuery>
 		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
