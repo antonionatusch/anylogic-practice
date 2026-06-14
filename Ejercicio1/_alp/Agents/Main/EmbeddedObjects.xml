@@ -727,6 +727,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
@@ -736,6 +739,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacitySchedule]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
@@ -973,6 +979,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
@@ -982,6 +991,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacitySchedule]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
@@ -1219,6 +1231,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
@@ -1228,6 +1243,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacitySchedule]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
@@ -1465,6 +1483,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityDefinitionType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.CAPACITY_SCHEDULE]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
@@ -1474,6 +1495,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacitySchedule]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[scheduleJornada]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityScheduleOnOff]]></Name>
