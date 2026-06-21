@@ -83,8 +83,8 @@ corresponde.]]></Text>
 		<Id>1781465132823</Id>
 		<Name><![CDATA[avg_time]]></Name>
 		<Description><![CDATA[dsadas]]></Description>
-		<X>500</X>
-		<Y>420</Y>
+		<X>280</X>
+		<Y>620</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -161,8 +161,8 @@ corresponde.]]></Text>
 	<Text>
 		<Id>1782008121346</Id>
 		<Name><![CDATA[text2]]></Name>
-		<X>640</X>
-		<Y>400</Y>
+		<X>420</X>
+		<Y>600</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
