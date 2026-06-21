@@ -896,13 +896,13 @@ agent.tiempoEntradaSistema = time();]]></Code>
 				<Name><![CDATA[onExit]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[if (agent.tipo == 1){ // si es alfajor
-	enter.take(agent); // el agente va ahí
 	agent.tiempo = triangular(12, 15, 18); // tiempo de alfajor	 	
+	enter.take(agent); // el agente va ahí
 };
 
 if (agent.tipo == 2){// si es masa
-	enter1.take(agent); // va a amasado
 	agent.tiempo = triangular(22,30,32); // tiempo de amasado
+	enter1.take(agent); // va a amasado
 };]]></Code>
 				</Value>
 			</Parameter>
@@ -2223,8 +2223,8 @@ if (agent.tipo == 2){// si es masa
 				<Value Class="CodeValue">
 					<Code><![CDATA[if (agent.tipo == 1){
 	// estacion manjar
-	enter2.take(agent);
 	agent.tiempo = triangular(7,9,13);
+	enter2.take(agent);
 };
 /*
 	el agente tipo 3 es aquel que 
@@ -2232,8 +2232,8 @@ if (agent.tipo == 2){// si es masa
 */
 
 if (agent.tipo == 3){
-	enter3.take(agent);
 	agent.tiempo = triangular(9,10,11);
+	enter3.take(agent);
 	agent.tipo = 1; // vuelve a ser alfajor
 };
 
@@ -2300,8 +2300,8 @@ if (agent.tipo == 2){
 	pero el tiempo puede ser diferente
 	para cada uno de ellos
 	*/
-	enter2.take(agent);
 	agent.tiempo = triangular(8,10,14);
+	enter2.take(agent);
 };]]></Code>
 				</Value>
 			</Parameter>
@@ -2364,13 +2364,13 @@ if (agent.tipo == 2){
 	de horneado
 	*/
 	agent.tipo = 3;
-	enter.take(agent);
 	agent.tiempo = triangular(13,16,19);
+	enter.take(agent);
 };
 
 if (agent.tipo == 2){ // masa post manjar
-	enter3.take(agent); // va a moldeado
 	agent.tiempo = triangular(12,13,14);
+	enter3.take(agent); // va a moldeado
 };]]></Code>
 				</Value>
 			</Parameter>
