@@ -210,7 +210,8 @@
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[agent.tipo = 1]]></Code>
+					<Code><![CDATA[agent.tipo = 1;
+agent.tiempoEntradaSistema = time();]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -450,7 +451,8 @@
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[agent.tipo = 2]]></Code>
+					<Code><![CDATA[agent.tipo = 2;
+agent.tiempoEntradaSistema = time();]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
