@@ -618,6 +618,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[5]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[maximumCapacity]]></Name>
@@ -808,6 +811,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[5]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[maximumCapacity]]></Name>
