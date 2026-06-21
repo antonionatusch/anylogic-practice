@@ -1371,6 +1371,9 @@ agent.tiempoEntrada = time();]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[capacityOnValue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[2]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[shiftGroupSchedules]]></Name>
