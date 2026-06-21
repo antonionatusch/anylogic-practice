@@ -2886,7 +2886,20 @@ agent.tipo.equals("REPISA") ? uniform(7, 12) :
 			<Parameter>
 				<Name><![CDATA[onEnter]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[traceln(agent.tipo + " terminó en tiempo " + (time() - agent.tiempoEntrada));]]></Code>
+					<Code><![CDATA[double tiempoSistema = time() - agent.tiempoEntrada;
+
+if (agent.tipo.equals("MACETERO")) {
+    sumaTiempoMaceteros += tiempoSistema;
+    cantMaceterosTerminados++;
+} 
+else if (agent.tipo.equals("BANDEJA")) {
+    sumaTiempoBandejas += tiempoSistema;
+    cantBandejasTerminadas++;
+} 
+else if (agent.tipo.equals("REPISA")) {
+    sumaTiempoRepisas += tiempoSistema;
+    cantRepisasTerminadas++;
+}]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>

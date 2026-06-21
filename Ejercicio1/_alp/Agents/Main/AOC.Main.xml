@@ -93,6 +93,7 @@
 	</ScaleRuler>
 	<CurrentLevel>1781379416615</CurrentLevel>
 	<ConnectionsId>1781379416610</ConnectionsId>
+	<Variables xmlns:al="http://anylogic.com"/>
 	<Schedules>
 		<Schedule>
 			<Id>1781380243117</Id>
