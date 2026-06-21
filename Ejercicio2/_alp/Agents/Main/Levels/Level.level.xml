@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Presentation>
+	<Text>
+		<Id>1779217207402</Id>
+		<Name><![CDATA[text]]></Name>
+		<X>20</X>
+		<Y>310</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[/* los items no llegan de uno,
+sino por paquetes;
+por ello, vamos a indicar que 
+las galletas o masas llegan 
+una vez al dia pero llegan varios 
+en ese momento */
+]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+</Presentation>
