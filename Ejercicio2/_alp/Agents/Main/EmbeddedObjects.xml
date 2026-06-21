@@ -3025,7 +3025,7 @@ if (agent.tipo == 1){
 	<EmbeddedObject>
 		<Id>1779217597773</Id>
 		<Name><![CDATA[restrictedAreaEnd]]></Name>
-		<X>720</X>
+		<X>510</X>
 		<Y>460</Y>
 		<Label>
 			<X>-50</X>
