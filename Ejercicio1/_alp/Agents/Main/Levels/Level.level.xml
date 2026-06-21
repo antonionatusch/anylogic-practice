@@ -185,4 +185,224 @@ en minutos]]></Text>
 		</Font>
 		<Alignment>CENTER</Alignment>
 	</Text>
+	<BarChart>
+		<Id>1782008549546</Id>
+		<Name><![CDATA[chartUtilizacionEstaciones]]></Name>
+		<X>540</X>
+		<Y>600</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<AutoUpdate>true</AutoUpdate>
+		<RecurrenceProperties>
+			<Id>1782008549544</Id>
+			<OccurrenceAtTime>true</OccurrenceAtTime>
+			<OccurrenceDate>1782028800000</OccurrenceDate>
+			<OccurrenceTime Class="CodeUnitValue">
+				<Code><![CDATA[0]]></Code>
+				<Unit Class="TimeUnits">MINUTE</Unit>
+			</OccurrenceTime>
+			<RecurrenceCode Class="CodeUnitValue">
+				<Code><![CDATA[1]]></Code>
+				<Unit Class="TimeUnits">MINUTE</Unit>
+			</RecurrenceCode>
+		</RecurrenceProperties>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Width>260</Width>
+		<Height>210</Height>
+		<BackgroundColor/>
+		<BorderColor/>
+		<ChartArea>
+			<XOffset>50</XOffset>
+			<YOffset>30</YOffset>
+			<Width>180</Width>
+			<Height>120</Height>
+			<BackgroundColor>-1</BackgroundColor>
+			<BorderColor>-16777216</BorderColor>
+			<GridColor>-12566464</GridColor>
+		</ChartArea>
+		<Legend>
+			<Place>SOUTH</Place>
+			<TextColor>-16777216</TextColor>
+			<Size>30</Size>
+		</Legend>
+		<Labels>
+			<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+			<TextColor>-12566464</TextColor>
+		</Labels>
+		<ShowLegend>true</ShowLegend>
+		<DataItem>
+			<Id>1782008550834</Id>
+			<Expression>rpSierra.utilization() * 100</Expression>
+			<Color>-4565549</Color>
+			<Title>Sierra</Title>
+		</DataItem>
+		<DataItem>
+			<Id>1782008588101</Id>
+			<Expression>rpTaladro.utilization() * 100</Expression>
+			<Color>-2354116</Color>
+			<Title>Taladro</Title>
+		</DataItem>
+		<DataItem>
+			<Id>1782008608549</Id>
+			<Expression>rpEsmeril.utilization() * 100</Expression>
+			<Color>-10496</Color>
+			<Title>Esmeril</Title>
+		</DataItem>
+		<DataItem>
+			<Id>1782008622178</Id>
+			<Expression>rpBarnizado.utilization() * 100</Expression>
+			<Color>-6632142</Color>
+			<Title>Barnizado</Title>
+		</DataItem>
+		<ScaleFromExpression>0</ScaleFromExpression>
+		<ScaleToExpression>1</ScaleToExpression>
+		<ScaleType>AUTO</ScaleType>
+		<Bars>
+			<Direction>UP</Direction>
+			<RelativeWidth>0.8</RelativeWidth>
+		</Bars>
+	</BarChart>
+	<Text>
+		<Id>1782009164761</Id>
+		<Name><![CDATA[text3]]></Name>
+		<X>680</X>
+		<Y>580</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Utilización de 
+estaciones de trabajo]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
+	<BarChart>
+		<Id>1782009230656</Id>
+		<Name><![CDATA[chartProductosPorHora]]></Name>
+		<X>840</X>
+		<Y>600</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<AutoUpdate>true</AutoUpdate>
+		<RecurrenceProperties>
+			<Id>1782009230654</Id>
+			<OccurrenceAtTime>true</OccurrenceAtTime>
+			<OccurrenceDate>1782028800000</OccurrenceDate>
+			<OccurrenceTime Class="CodeUnitValue">
+				<Code><![CDATA[0]]></Code>
+				<Unit Class="TimeUnits">MINUTE</Unit>
+			</OccurrenceTime>
+			<RecurrenceCode Class="CodeUnitValue">
+				<Code><![CDATA[1]]></Code>
+				<Unit Class="TimeUnits">MINUTE</Unit>
+			</RecurrenceCode>
+		</RecurrenceProperties>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Width>260</Width>
+		<Height>210</Height>
+		<BackgroundColor/>
+		<BorderColor/>
+		<ChartArea>
+			<XOffset>50</XOffset>
+			<YOffset>30</YOffset>
+			<Width>180</Width>
+			<Height>120</Height>
+			<BackgroundColor>-1</BackgroundColor>
+			<BorderColor>-16777216</BorderColor>
+			<GridColor>-12566464</GridColor>
+		</ChartArea>
+		<Legend>
+			<Place>SOUTH</Place>
+			<TextColor>-16777216</TextColor>
+			<Size>30</Size>
+		</Legend>
+		<Labels>
+			<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+			<TextColor>-12566464</TextColor>
+		</Labels>
+		<ShowLegend>true</ShowLegend>
+		<DataItem>
+			<Id>1782009232296</Id>
+			<Expression>cantMaceterosTerminados / 56.0</Expression>
+			<Color>-2354116</Color>
+			<Title>Maceteros/h</Title>
+		</DataItem>
+		<DataItem>
+			<Id>1782009274147</Id>
+			<Expression>cantBandejasTerminadas / 56.0</Expression>
+			<Color>-10496</Color>
+			<Title>Bandejas/h</Title>
+		</DataItem>
+		<DataItem>
+			<Id>1782009286623</Id>
+			<Expression>cantRepisasTerminadas / 56.0</Expression>
+			<Color>-6632142</Color>
+			<Title>Repisas/h</Title>
+		</DataItem>
+		<DataItem>
+			<Id>1782009304829</Id>
+			<Expression>(cantMaceterosTerminados + cantBandejasTerminadas + cantRepisasTerminadas) / 56.0</Expression>
+			<Color>-14774017</Color>
+			<Title>Total/h</Title>
+		</DataItem>
+		<ScaleFromExpression>0</ScaleFromExpression>
+		<ScaleToExpression>1</ScaleToExpression>
+		<ScaleType>AUTO</ScaleType>
+		<Bars>
+			<Direction>UP</Direction>
+			<RelativeWidth>0.8</RelativeWidth>
+		</Bars>
+	</BarChart>
+	<Text>
+		<Id>1782009245547</Id>
+		<Name><![CDATA[text4]]></Name>
+		<X>980</X>
+		<Y>580</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Productos procesados
+por hora]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
 </Presentation>
