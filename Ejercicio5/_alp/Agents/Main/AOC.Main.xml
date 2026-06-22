@@ -98,6 +98,97 @@
 	</ScaleRuler>
 	<CurrentLevel>1782146633084</CurrentLevel>
 	<ConnectionsId>1782146633079</ConnectionsId>
+	<Variables xmlns:al="http://anylogic.com"/>
+	<Dependences>
+		<Link SourceId="1782146741678" TargetId="1782146772504" Polarity="null">
+			<Height>64.165</Height>
+			<PolarityPosition>0.95</PolarityPosition>
+			<Direction>
+				<X>-150</X>
+				<Y>0</Y>
+			</Direction>
+			<Id>1782146920343</Id>
+			<Name><![CDATA[Poblacion - Nacimientos]]></Name>
+			<X>500</X>
+			<Y>300</Y>
+			<Label>
+				<X>40</X>
+				<Y>-50</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Color>-11832691</Color>
+			<LineWidth>1</LineWidth>
+			<Delay>false</Delay>
+		</Link>
+		<Link SourceId="1782146741678" TargetId="1782146841996" Polarity="null">
+			<Height>62.164</Height>
+			<PolarityPosition>0.95</PolarityPosition>
+			<Direction>
+				<X>150</X>
+				<Y>0</Y>
+			</Direction>
+			<Id>1782146942065</Id>
+			<Name><![CDATA[Poblacion - Muertes]]></Name>
+			<X>500</X>
+			<Y>300</Y>
+			<Label>
+				<X>40</X>
+				<Y>-50</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Color>-11832691</Color>
+			<LineWidth>1</LineWidth>
+			<Delay>false</Delay>
+		</Link>
+		<Link SourceId="1782146854984" TargetId="1782146772504" Polarity="null">
+			<Height>20.0</Height>
+			<PolarityPosition>0.95</PolarityPosition>
+			<Direction>
+				<X>50</X>
+				<Y>-100</Y>
+			</Direction>
+			<Id>1782147002594</Id>
+			<Name><![CDATA[TDN - Nacimientos]]></Name>
+			<X>300</X>
+			<Y>400</Y>
+			<Label>
+				<X>40</X>
+				<Y>-50</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Color>-11832691</Color>
+			<LineWidth>1</LineWidth>
+			<Delay>false</Delay>
+		</Link>
+		<Link SourceId="1782146870714" TargetId="1782146841996" Polarity="null">
+			<Height>20.0</Height>
+			<PolarityPosition>0.95</PolarityPosition>
+			<Direction>
+				<X>-10</X>
+				<Y>-100</Y>
+			</Direction>
+			<Id>1782147010952</Id>
+			<Name><![CDATA[TDM - Muertes]]></Name>
+			<X>660</X>
+			<Y>400</Y>
+			<Label>
+				<X>40</X>
+				<Y>-50</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Color>-11832691</Color>
+			<LineWidth>1</LineWidth>
+			<Delay>false</Delay>
+		</Link>
+	</Dependences>
 	<AgentLinks>
 		<AgentLink>
 			<Id>1782146633079</Id>

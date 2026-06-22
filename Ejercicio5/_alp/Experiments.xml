@@ -38,7 +38,14 @@
 				<Alignment>LEFT</Alignment>
 			</Text>
 		</Presentation>
-		<Parameters/>
+		<Parameters>
+			<Parameter>
+				<ParameterName>TDN</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>TDM</ParameterName>
+			</Parameter>
+		</Parameters>
 		<PresentationProperties>
 			<EnableZoomAndPanning>true</EnableZoomAndPanning>
 			<ExecutionMode>realTimeScaled</ExecutionMode>
