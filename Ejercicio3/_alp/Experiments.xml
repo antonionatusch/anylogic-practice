@@ -7,6 +7,17 @@
 		<MaximumMemory>512</MaximumMemory>
 		<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
 		<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+		<AfterSimulationRunCode>while (root.zonaTemporalTipo1.size() &gt; 0) {
+    root.enterAlmacen.take(root.zonaTemporalTipo1.removeFirst());
+}
+
+while (root.zonaTemporalTipo2.size() &gt; 0) {
+    root.enterAlmacen.take(root.zonaTemporalTipo2.removeFirst());
+}
+
+traceln("Cantidad de tipo 1: " + root.cantPiezaTipo1);
+traceln("Cantidad de tipo 2: " + root.cantPiezaTipo2);
+traceln("Total recogido: " + (root.cantPiezaTipo1 + root.cantPiezaTipo2));</AfterSimulationRunCode>
 		<SeedValue>1</SeedValue>
 		<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 		<VmArgs/>

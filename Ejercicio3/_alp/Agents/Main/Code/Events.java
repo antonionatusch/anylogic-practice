@@ -14,14 +14,3 @@ while (zonaTemporalTipo2.size() > 0) {
 }
 /*ALCODEEND*/}
 
-void evRecogidaFinal()
-{/*ALCODESTART::1782094413253*/
-while (zonaTemporalTipo1.size() > 0) {
-    enterAlmacen.take(zonaTemporalTipo1.removeFirst());
-}
-
-while (zonaTemporalTipo2.size() > 0) {
-    enterAlmacen.take(zonaTemporalTipo2.removeFirst());
-}
-/*ALCODEEND*/}
-
