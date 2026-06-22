@@ -16,7 +16,7 @@
 			<EquationStyle>classic</EquationStyle>
 			<Width>20</Width>
 			<Height>20</Height>
-			<InitialValue>0</InitialValue>
+			<InitialValue>10000</InitialValue>
 			<Color>-4073239</Color>
 		</Properties>
 	</Variable>
@@ -36,7 +36,7 @@
               External="false"
               Constant="false"
               Array="false">
-			<Formula>0</Formula>
+			<Formula>Poblacion*TDN</Formula>
 			<Color>-4073239</Color>
 			<ValveIndex>1</ValveIndex>
 			<Points>
@@ -71,7 +71,7 @@
               External="false"
               Constant="false"
               Array="false">
-			<Formula>0</Formula>
+			<Formula>Poblacion*TDM</Formula>
 			<Color>-4073239</Color>
 			<ValveIndex>1</ValveIndex>
 			<Points>
@@ -106,6 +106,9 @@
 			<Type><![CDATA[double]]></Type>
 			<UnitType>NONE</UnitType>
 			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.005]]></Code>
+			</DefaultValue>
 			<ParameterEditor>
 				<Id>1782146854982</Id>
 				<EditorContolType>TEXT_BOX</EditorContolType>
@@ -131,6 +134,9 @@
 			<Type><![CDATA[double]]></Type>
 			<UnitType>NONE</UnitType>
 			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.0025]]></Code>
+			</DefaultValue>
 			<ParameterEditor>
 				<Id>1782146870712</Id>
 				<EditorContolType>TEXT_BOX</EditorContolType>
