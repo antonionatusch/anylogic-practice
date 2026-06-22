@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActiveObjectClass>
-	<Id>1782145247537</Id>
-	<Name><![CDATA[Main]]></Name>
+	<Id>1782145428817</Id>
+	<Name><![CDATA[Trabajadores]]></Name>
 	<Generic>false</Generic>
 	<GenericParameter>
-		<Id>1782145247542</Id>
-		<Name><![CDATA[1782145247542]]></Name>
+		<Id>1782145428822</Id>
+		<Name><![CDATA[1782145428822]]></Name>
 		<GenericParameterValue Class="CodeValue">
 			<Code><![CDATA[T extends Agent]]></Code>
 		</GenericParameterValue>
@@ -58,7 +58,7 @@
 		<ColumnsCountCode>100</ColumnsCountCode>
 		<RowsCountCode>100</RowsCountCode>
 		<NeigborhoodType>MOORE</NeigborhoodType>
-		<LayoutType>RANDOM</LayoutType>
+		<LayoutType>USER_DEF</LayoutType>
 		<NetworkType>USER_DEF</NetworkType>
 		<ConnectionsPerAgentCode>2</ConnectionsPerAgentCode>
 		<ConnectionsRangeCode>50</ConnectionsRangeCode>
@@ -67,7 +67,7 @@
 	</EnvironmentProperties>
 	<DatasetsCreationProperties>
 		<AutoCreate>true</AutoCreate>
-		<Id>1782145247536</Id>
+		<Id>1782145428816</Id>
 		<OccurrenceAtTime>true</OccurrenceAtTime>
 		<OccurrenceDate>1782201600000</OccurrenceDate>
 		<OccurrenceTime Class="CodeUnitValue">
@@ -80,7 +80,7 @@
 		</RecurrenceCode>
 	</DatasetsCreationProperties>
 	<ScaleRuler>
-		<Id>1782145247540</Id>
+		<Id>1782145428820</Id>
 		<Name><![CDATA[scale]]></Name>
 		<X>0</X>
 		<Y>-150</Y>
@@ -96,11 +96,112 @@
 		<Scale>10</Scale>
 		<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
 	</ScaleRuler>
-	<CurrentLevel>1782145247543</CurrentLevel>
-	<ConnectionsId>1782145247538</ConnectionsId>
+	<CurrentLevel>1782145428823</CurrentLevel>
+	<ConnectionsId>1782145428818</ConnectionsId>
+	<Variables xmlns:al="http://anylogic.com"/>
+	<StatechartElements>
+		<StatechartElement Class="State" ParentState="ROOT_NODE">
+			<Id>1782145529861</Id>
+			<Name><![CDATA[relax]]></Name>
+			<X>260</X>
+			<Y>70</Y>
+			<Label>
+				<X>10</X>
+				<Y>10</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<Properties Width="100" Height="30">
+				<EntryAction>shapeBody.setFillColor(dodgerBlue);</EntryAction>
+				<FillColor>-14774017</FillColor>
+			</Properties>
+		</StatechartElement>
+		<StatechartElement Class="State" ParentState="ROOT_NODE">
+			<Id>1782145599850</Id>
+			<Name><![CDATA[estres]]></Name>
+			<X>260</X>
+			<Y>150</Y>
+			<Label>
+				<X>10</X>
+				<Y>10</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<Properties Width="100" Height="30">
+				<EntryAction>shapeBody.setFillColor(red);</EntryAction>
+				<FillColor>-65536</FillColor>
+			</Properties>
+		</StatechartElement>
+		<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
+			<Id>1782145522636</Id>
+			<Name><![CDATA[statechart]]></Name>
+			<X>310</X>
+			<Y>30</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<Points>
+				<Point>
+					<X>0</X>
+					<Y>0</Y>
+				</Point>
+				<Point>
+					<X>0</X>
+					<Y>40</Y>
+				</Point>
+			</Points>
+			<Properties Target="1782145529861"/>
+		</StatechartElement>
+		<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+			<Id>1782145625833</Id>
+			<Name><![CDATA[transition]]></Name>
+			<X>310</X>
+			<Y>100</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Points>
+				<Point>
+					<X>0</X>
+					<Y>0</Y>
+				</Point>
+				<Point>
+					<X>0</X>
+					<Y>50</Y>
+				</Point>
+			</Points>
+			<IconOffset>20.0</IconOffset>
+			<Properties Source="1782145529861" Target="1782145599850" Trigger="rate">
+				<Timeout Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</Timeout>
+				<Condition>true</Condition>
+				<Rate Class="CodeUnitValue">
+					<Code><![CDATA[burnout]]></Code>
+					<Unit Class="RateUnits">PER_DAY</Unit>
+				</Rate>
+				<MessageType>Object</MessageType>
+				<DefaultTransition>true</DefaultTransition>
+				<FilterType>unconditionally</FilterType>
+				<EqualsExpression>"text"</EqualsExpression>
+				<SatisfiesExpression>true</SatisfiesExpression>
+			</Properties>
+		</StatechartElement>
+	</StatechartElements>
 	<AgentLinks>
 		<AgentLink>
-			<Id>1782145247538</Id>
+			<Id>1782145428818</Id>
 			<Name><![CDATA[connections]]></Name>
 			<X>50</X>
 			<Y>-50</Y>
@@ -115,6 +216,11 @@
 			<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
 			<AgentLinkBidirectional>true</AgentLinkBidirectional>
 			<MessageType>Object</MessageType>
+			<StatechartReference>
+				<PackageName>ejercicio4</PackageName>
+				<ClassName>Trabajadores</ClassName>
+				<ItemName>statechart</ItemName>
+			</StatechartReference>
 			<LineStyle>SOLID</LineStyle>
 			<LineWidth>1</LineWidth>
 			<LineColor>-16777216</LineColor>
@@ -123,10 +229,28 @@
 			<LineArrowPosition>END</LineArrowPosition>
 		</AgentLink>
 	</AgentLinks>
-	<EmbeddedObjects xmlns:al="http://anylogic.com"/>
+	<ContainerLinks>
+		<ContainerLink>
+			<Id>1782146173274</Id>
+			<Name><![CDATA[main]]></Name>
+			<X>50</X>
+			<Y>-100</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<ActiveObjectClass>
+				<PackageName>ejercicio4</PackageName>
+				<ClassName>Main</ClassName>
+			</ActiveObjectClass>
+		</ContainerLink>
+	</ContainerLinks>
 	<Presentation>
 		<Level>
-			<Id>1782145247543</Id>
+			<Id>1782145428823</Id>
 			<Name><![CDATA[level]]></Name>
 			<X>0</X>
 			<Y>0</Y>
@@ -142,27 +266,5 @@
 			<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
 			<Presentation xmlns:al="http://anylogic.com"/>
 		</Level>
-		<EmbeddedObjectPresentation>
-			<Id>1782145428838</Id>
-			<Name><![CDATA[trabajadores_presentation]]></Name>
-			<X>50</X>
-			<Y>50</Y>
-			<Label>
-				<X>10</X>
-				<Y>0</Y>
-			</Label>
-			<PublicFlag>true</PublicFlag>
-			<PresentationFlag>true</PresentationFlag>
-			<ShowLabel>false</ShowLabel>
-			<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-			<EmbeddedIcon>false</EmbeddedIcon>
-			<Z>0</Z>
-			<Rotation>0.0</Rotation>
-			<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
-			<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
-			<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
-			<Latitude>0.0</Latitude>
-			<Longitude>0.0</Longitude>
-		</EmbeddedObjectPresentation>
 	</Presentation>
 </ActiveObjectClass>
