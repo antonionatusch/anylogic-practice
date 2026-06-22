@@ -48,11 +48,11 @@
 			<RealTimeScale>1.0</RealTimeScale>
 		</PresentationProperties>
 		<ModelTimeProperties>
-			<StopOption>Never</StopOption>
+			<StopOption>Stop at specified time</StopOption>
 			<InitialDate>1782086400000</InitialDate>
 			<InitialTime>0.0</InitialTime>
-			<FinalDate>1784678400000</FinalDate>
-			<FinalTime>100.0</FinalTime>
+			<FinalDate>1782093600000</FinalDate>
+			<FinalTime>120.0</FinalTime>
 		</ModelTimeProperties>
 		<BypassInitialScreen>true</BypassInitialScreen>
 	</SimulationExperiment>

@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Connectors>
 	<Connector>
-		<Id>1782153501593</Id>
-		<Name><![CDATA[connector]]></Name>
-		<X>110</X>
-		<Y>80</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<SourceEmbeddedObjectReference>
-			<PackageName>ejercicio6</PackageName>
-			<ClassName>Main</ClassName>
-			<ItemName>N6040</ItemName>
-		</SourceEmbeddedObjectReference>
-		<SourceConnectableItemReference>
-			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>SelectOutput</ClassName>
-			<ItemName>in</ItemName>
-		</SourceConnectableItemReference>
-		<TargetEmbeddedObjectReference>
-			<PackageName>ejercicio6</PackageName>
-			<ClassName>Main</ClassName>
-			<ItemName>Llegada</ItemName>
-		</TargetEmbeddedObjectReference>
-		<TargetConnectableItemReference>
-			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Source</ClassName>
-			<ItemName>out</ItemName>
-		</TargetConnectableItemReference>
-		<Points>
-			<Point>
-				<X>0</X>
-				<Y>0</Y>
-			</Point>
-			<Point>
-				<X>-30</X>
-				<Y>0</Y>
-			</Point>
-		</Points>
-	</Connector>
-	<Connector>
 		<Id>1782153563197</Id>
 		<Name><![CDATA[connector1]]></Name>
 		<X>180</X>
@@ -486,65 +443,6 @@
 		</Points>
 	</Connector>
 	<Connector>
-		<Id>1782153940636</Id>
-		<Name><![CDATA[connector11]]></Name>
-		<X>400</X>
-		<Y>80</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<SourceEmbeddedObjectReference>
-			<PackageName>ejercicio6</PackageName>
-			<ClassName>Main</ClassName>
-			<ItemName>B11</ItemName>
-		</SourceEmbeddedObjectReference>
-		<SourceConnectableItemReference>
-			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Delay</ClassName>
-			<ItemName>out</ItemName>
-		</SourceConnectableItemReference>
-		<TargetEmbeddedObjectReference>
-			<PackageName>ejercicio6</PackageName>
-			<ClassName>Main</ClassName>
-			<ItemName>Salida</ItemName>
-		</TargetEmbeddedObjectReference>
-		<TargetConnectableItemReference>
-			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Sink</ClassName>
-			<ItemName>in</ItemName>
-		</TargetConnectableItemReference>
-		<Points>
-			<Point>
-				<X>0</X>
-				<Y>0</Y>
-			</Point>
-			<Point>
-				<X>100</X>
-				<Y>0</Y>
-			</Point>
-			<Point>
-				<X>100</X>
-				<Y>150</Y>
-			</Point>
-			<Point>
-				<X>140</X>
-				<Y>150</Y>
-			</Point>
-			<Point>
-				<X>140</X>
-				<Y>170</Y>
-			</Point>
-			<Point>
-				<X>150</X>
-				<Y>170</Y>
-			</Point>
-		</Points>
-	</Connector>
-	<Connector>
 		<Id>1782153949680</Id>
 		<Name><![CDATA[connector12]]></Name>
 		<X>400</X>
@@ -569,11 +467,11 @@
 		<TargetEmbeddedObjectReference>
 			<PackageName>ejercicio6</PackageName>
 			<ClassName>Main</ClassName>
-			<ItemName>Salida</ItemName>
+			<ItemName>timeMeasureEnd</ItemName>
 		</TargetEmbeddedObjectReference>
 		<TargetConnectableItemReference>
 			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Sink</ClassName>
+			<ClassName>TimeMeasureEnd</ClassName>
 			<ItemName>in</ItemName>
 		</TargetConnectableItemReference>
 		<Points>
@@ -594,7 +492,7 @@
 				<Y>80</Y>
 			</Point>
 			<Point>
-				<X>150</X>
+				<X>170</X>
 				<Y>80</Y>
 			</Point>
 		</Points>
@@ -624,11 +522,11 @@
 		<TargetEmbeddedObjectReference>
 			<PackageName>ejercicio6</PackageName>
 			<ClassName>Main</ClassName>
-			<ItemName>Salida</ItemName>
+			<ItemName>timeMeasureEnd</ItemName>
 		</TargetEmbeddedObjectReference>
 		<TargetConnectableItemReference>
 			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Sink</ClassName>
+			<ClassName>TimeMeasureEnd</ClassName>
 			<ItemName>in</ItemName>
 		</TargetConnectableItemReference>
 		<Points>
@@ -645,13 +543,201 @@
 				<Y>-90</Y>
 			</Point>
 			<Point>
-				<X>150</X>
+				<X>170</X>
 				<Y>-90</Y>
 			</Point>
 		</Points>
 	</Connector>
 	<Connector>
-		<Id>1782153965293</Id>
+		<Id>1782154049476</Id>
+		<Name><![CDATA[connector]]></Name>
+		<X>110</X>
+		<Y>80</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>N6040</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>timeMeasureStart</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>TimeMeasureStart</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>-20</X>
+				<Y>0</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1782154049478</Id>
+		<Name><![CDATA[connector15]]></Name>
+		<X>80</X>
+		<Y>80</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>timeMeasureStart</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>TimeMeasureStart</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>Llegada</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Source</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>-30</X>
+				<Y>0</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1782154074060</Id>
+		<Name><![CDATA[connector11]]></Name>
+		<X>0</X>
+		<Y>0</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>B11</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Delay</ClassName>
+			<ItemName>out</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>timeMeasureEnd</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>TimeMeasureEnd</ClassName>
+			<ItemName>in</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>400</X>
+				<Y>80</Y>
+			</Point>
+			<Point>
+				<X>500</X>
+				<Y>80</Y>
+			</Point>
+			<Point>
+				<X>500</X>
+				<Y>230</Y>
+			</Point>
+			<Point>
+				<X>540</X>
+				<Y>230</Y>
+			</Point>
+			<Point>
+				<X>540</X>
+				<Y>250</Y>
+			</Point>
+			<Point>
+				<X>570</X>
+				<Y>250</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1782154074062</Id>
+		<Name><![CDATA[connector16]]></Name>
+		<X>0</X>
+		<Y>0</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>timeMeasureEnd</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>TimeMeasureEnd</ClassName>
+			<ItemName>out</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>ejercicio6</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>Salida</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Sink</ClassName>
+			<ItemName>in</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>580</X>
+				<Y>250</Y>
+			</Point>
+			<Point>
+				<X>600</X>
+				<Y>250</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1782154334546</Id>
 		<Name><![CDATA[connector14]]></Name>
 		<X>400</X>
 		<Y>450</Y>
@@ -675,11 +761,11 @@
 		<TargetEmbeddedObjectReference>
 			<PackageName>ejercicio6</PackageName>
 			<ClassName>Main</ClassName>
-			<ItemName>Salida</ItemName>
+			<ItemName>timeMeasureEnd</ItemName>
 		</TargetEmbeddedObjectReference>
 		<TargetConnectableItemReference>
 			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Sink</ClassName>
+			<ClassName>TimeMeasureEnd</ClassName>
 			<ItemName>in</ItemName>
 		</TargetConnectableItemReference>
 		<Points>
@@ -688,23 +774,23 @@
 				<Y>0</Y>
 			</Point>
 			<Point>
-				<X>110</X>
+				<X>125</X>
 				<Y>0</Y>
 			</Point>
 			<Point>
-				<X>110</X>
-				<Y>-180</Y>
+				<X>125</X>
+				<Y>-190</Y>
 			</Point>
 			<Point>
-				<X>140</X>
-				<Y>-180</Y>
+				<X>165</X>
+				<Y>-190</Y>
 			</Point>
 			<Point>
-				<X>140</X>
+				<X>165</X>
 				<Y>-200</Y>
 			</Point>
 			<Point>
-				<X>150</X>
+				<X>170</X>
 				<Y>-200</Y>
 			</Point>
 		</Points>
